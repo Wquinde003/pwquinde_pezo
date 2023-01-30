@@ -1,6 +1,5 @@
-import  Express  from 'express'
+import app from './app'
 
-const app = Express()
+app.listen(4000);
 
-app.listen(3000);
-console.log('El servidor esta escuchando en el puerto', 3000)
+console.log('El servidor esta escuchando en el puerto', 4000)
