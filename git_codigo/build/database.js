@@ -2,15 +2,12 @@
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-//mongoose.connect("mongodb://Localhost/companydb")
-//    .then(db=> console.log('la databse se conecto'))
-//    .catch(error => console.log(error))
-
-_mongoose["default"].connect("mongodb://Localhost/companydb", {
+_mongoose["default"].set('strictQuery', true);
+_mongoose["default"].connect("mongodb://127.0.0.1/companydb", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(function (db) {
   return console.log('Conexión exitosa.');
-})["catch"](function (db) {
+})["catch"](function (error) {
   return console.log(error);
 });
