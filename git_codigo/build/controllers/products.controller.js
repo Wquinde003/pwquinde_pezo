@@ -6,7 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.updateProductById = exports.getProducts = exports.getProductById = exports.deleteProductById = exports.createProducts = void 0;
 var createProducts = function createProducts(req, res) {};
 exports.createProducts = createProducts;
-var getProducts = function getProducts(req, res) {};
+var getProducts = function getProducts(req, res) {
+  res.json("get products");
+};
 exports.getProducts = getProducts;
 var getProductById = function getProductById(req, res) {};
 exports.getProductById = getProductById;
