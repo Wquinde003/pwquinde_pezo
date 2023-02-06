@@ -30,11 +30,11 @@ var createRoles = /*#__PURE__*/function () {
         case 6:
           _context.next = 8;
           return _mongoose.Promise.all([new _Role["default"]({
-            name: 'user'
+            name: "user"
           }).save(), new _Role["default"]({
-            name: 'moderator'
+            name: "moderator"
           }).save(), new _Role["default"]({
-            name: 'user'
+            name: "user"
           }).save()]);
         case 8:
           values = _context.sent;
